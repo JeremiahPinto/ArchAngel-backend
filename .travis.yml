@@ -1,0 +1,10 @@
+dist: xenial
+sudo: true
+language: node_js
+services: mongodb
+nodejs:
+  - "lts/*"
+cache:
+  yarn: true
+notifications:
+  email: false
