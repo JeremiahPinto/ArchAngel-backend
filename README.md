@@ -1,6 +1,6 @@
-# backend
+# ArchAngel Backend
 
-> 
+[![Build Status](https://travis-ci.com/JeremiahPinto/ArchAngel-backend.svg?branch=master)](https://travis-ci.com/JeremiahPinto/ArchAngel-backend)
 
 ## About
 
