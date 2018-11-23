@@ -1,6 +1,7 @@
 # ArchAngel Backend
 
-[![Build Status](https://travis-ci.com/JeremiahPinto/ArchAngel-backend.svg?branch=master)](https://travis-ci.com/JeremiahPinto/ArchAngel-backend)
+[![Travis (.com) branch](https://img.shields.io/travis/com/JeremiahPinto/ArchAngel-backend.svg?style=for-the-badge)](https://travis-ci.com/JeremiahPinto/ArchAngel-backend)
+[![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/:userRepo.svg?style=for-the-badge)](https://codeclimate.com/github/JeremiahPinto/ArchAngel-backend/maintainability)
 
 ## About
 
