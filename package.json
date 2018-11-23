@@ -2,7 +2,7 @@
   "name": "backend",
   "description": "",
   "version": "0.0.0",
-  "homepage": "",
+  "homepage": "https://archangel.com",
   "main": "src",
   "keywords": [
     "feathers"
@@ -18,17 +18,22 @@
     "test": "test/"
   },
   "engines": {
-    "node": "^10.0.0",
+    "node": "^11.2.0",
     "yarn": ">= 0.18.0"
   },
   "scripts": {
     "test": "yarn run eslint && yarn run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "lint": "eslint src/.",
     "dev": "nodemon src/",
+    "serve": "nodemon src/. --exec 'npm run lint && node'",
     "start": "node src/",
     "mocha": "mocha test/ --recursive --exit"
   },
   "dependencies": {
+    "@feathersjs/authentication": "^2.1.12",
+    "@feathersjs/authentication-jwt": "^2.0.6",
+    "@feathersjs/authentication-local": "^1.2.6",
     "@feathersjs/configuration": "^2.0.4",
     "@feathersjs/errors": "^3.3.4",
     "@feathersjs/express": "^1.2.7",
@@ -36,12 +41,22 @@
     "@feathersjs/socketio": "^3.2.6",
     "compression": "^1.7.3",
     "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "feathers-authentication-management": "^2.0.1",
+    "feathers-hooks-common": "^4.17.14",
+    "feathers-mailer": "^3.0.1",
+    "feathers-mongoose": "^6.1.4",
     "helmet": "^3.13.0",
+    "mongodb-core": "^3.1.8",
+    "mongoose": "^5.2.7",
+    "nodemailer-smtp-transport": "^2.7.4",
     "serve-favicon": "^2.5.0",
     "winston": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.8.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.6",
     "request": "^2.88.0",
