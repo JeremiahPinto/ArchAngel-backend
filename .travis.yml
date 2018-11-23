@@ -3,7 +3,6 @@ sudo: true
 language: node_js
 services: mongodb
 nodejs:
-  - "lts/*"
   - "11.2.0"
 cache:
   yarn: true
